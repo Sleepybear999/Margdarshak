@@ -5,7 +5,7 @@ import pandas as pd
 from io import BytesIO
 from typing import List
 from botocore.exceptions import ClientError
-from langchain.schema import Document
+from langchain_core.documents import Document
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from config import PDF_DIR, EXCEL_DIR, AWS_S3_BUCKET_NAME
